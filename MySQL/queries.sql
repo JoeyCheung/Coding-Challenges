@@ -22,3 +22,7 @@ WHERE COUNTRYCODE = 'JPN';
 -- Query the names of all American cities in CITY with populations larger than 120000. The CountryCode for America is USA --
 SELECT NAME FROM CITY
 WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
+
+-- Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN --
+SELECT * FROM CITY
+WHERE COUNTRYCODE = 'JPN';
