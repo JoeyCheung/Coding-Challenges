@@ -46,11 +46,6 @@ FROM (SELECT CITY
       FROM STATION
      ORDER BY LENGTH(CITY), CITY)
 WHERE ROWNUM = 1;
-SELECT CITY, LENGTH(CITY)
-FROM (SELECT CITY
-      FROM STATION
-     ORDER BY LENGTH(CITY) DESC, CITY)
-WHERE ROWNUM = 1;
 
 -- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates --
 SELECT DISTINCT(CITY) 
