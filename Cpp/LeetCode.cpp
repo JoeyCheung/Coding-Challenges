@@ -84,3 +84,13 @@ public:
         return p;
     }
 };
+
+Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
+
+class Solution {
+public:
+    string toLowerCase(string str) {
+        transform(str.begin(), str.end(), str.begin(), ::tolower);
+        return str;
+    }
+};
