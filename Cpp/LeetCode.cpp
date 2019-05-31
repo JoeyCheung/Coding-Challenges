@@ -1,4 +1,4 @@
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+//Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 class Solution {
 public:
@@ -14,8 +14,10 @@ public:
     }
 };
 
+/*
 Write a function to find the longest common prefix string amongst an array of strings. 
 If there is no common prefix, return an empty string "".
+*/
 
 class Solution {
 public:
@@ -38,8 +40,10 @@ public:
     }
 };
 
+/*
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.
 If there are two middle nodes, return the second middle node.
+*/
 
 class Solution {
 public:
@@ -54,9 +58,11 @@ public:
     }
 };
 
+/*
 Write a function that reverses a string. The input string is given as an array of characters char[].
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 You may assume all the characters consist of printable ascii characters.
+*/
 
 class Solution {
 public:
@@ -65,7 +71,7 @@ public:
     }
 };
 
-Reverse a singly linked list.
+//verse a singly linked list.
 
 class Solution {
 public:
@@ -85,7 +91,7 @@ public:
     }
 };
 
-Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
+//implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
 
 class Solution {
 public:
@@ -95,10 +101,10 @@ public:
     }
 };
 
+/*
 Given a n-ary tree, find its maximum depth.
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
-/*
 // Definition for a Node.
 class Node {
 public:
@@ -111,8 +117,9 @@ public:
         val = _val;
         children = _children;
     }
-};
+}
 */
+
 class Solution {
 public:
     int maxDepth(Node* root) {
