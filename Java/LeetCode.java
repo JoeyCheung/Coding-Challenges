@@ -1,7 +1,9 @@
+/*
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
-    
+*/
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
@@ -15,7 +17,7 @@ class Solution {
     }
 }
 
-Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+//Given an array nums and a value val, remove all instances of that value in-place and return the new length.
     
 class Solution {
     public int removeElement(int[] nums, int val) {
@@ -30,7 +32,7 @@ class Solution {
     }
 }
 
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+//Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 class Solution {
     public boolean isPalindrome(int x) {
