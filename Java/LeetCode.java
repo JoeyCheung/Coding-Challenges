@@ -129,6 +129,13 @@ Implement these functions in your linked list class:
     addAtIndex(index, val) : Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
     deleteAtIndex(index) : Delete the index-th node in the linked list, if the index is valid.
 
+ * Your MyLinkedList object will be instantiated and called as such:
+ * MyLinkedList obj = new MyLinkedList();
+ * int param_1 = obj.get(index);
+ * obj.addAtHead(val);
+ * obj.addAtTail(val);
+ * obj.addAtIndex(index,val);
+ * obj.deleteAtIndex(index);
 */
 
 class MyLinkedList {
@@ -224,12 +231,32 @@ class MyLinkedList {
     }
 }
 
-/**
- * Your MyLinkedList object will be instantiated and called as such:
- * MyLinkedList obj = new MyLinkedList();
- * int param_1 = obj.get(index);
- * obj.addAtHead(val);
- * obj.addAtTail(val);
- * obj.addAtIndex(index,val);
- * obj.deleteAtIndex(index);
+/*
+Invert Binary Tree
+
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
  */
+
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        
+        if(root==null){
+            return root;
+        }
+ 
+        invertTree(root.left);
+        invertTree(root.right);
+ 
+        TreeNode t = root.left;
+        root.left = root.right;
+        root.right = t;
+ 
+        return root;
+    }
+}
