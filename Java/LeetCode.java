@@ -77,3 +77,43 @@ class Solution {
         return t1;
     }
 }
+
+/*
+Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
+The binary search tree is guaranteed to have unique values.
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+
+class Solution {
+    public int rangeSumBST(TreeNode root, int L, int R) {
+        
+        int ans = 0;
+        Stack<TreeNode> st = new Stack<TreeNode>();
+        if (root == null) return 0;
+        st.push(root);
+        while (st.size() > 0) {
+            TreeNode p = st.peek();
+            st.pop();
+            if (p != null) {
+                if (p.val >= L && p.val <= R) {
+                    ans += p.val;   // update the sum
+                }
+                if (L < p.val) {
+                    st.push(p.left);  // push left tree
+                }
+                if (p.val < R) {
+                    st.push(p.right);  // push the right tree
+                }
+            }
+        }
+        return ans;  
+    }
+}
