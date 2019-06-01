@@ -25,5 +25,5 @@ class Solution:
         t = root.left
         root.left = root.right
         root.right = t
- 
+        
         return root
