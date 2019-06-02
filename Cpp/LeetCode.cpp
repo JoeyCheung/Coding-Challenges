@@ -129,7 +129,7 @@ public:
         for (vector<Node*>::iterator it = root->children.begin(); it != root->children.end(); it++) {
             maxdepth = max(maxdepth, maxDepth(*it)); 
         }
-    return maxdepth + 1 ; 
+        return maxdepth + 1 ; 
     }
 };
 
