@@ -44,7 +44,7 @@ class Solution:
 class Solution:
     def reverseWords(self, s: str) -> str:
         def reverseWord(word):
-            return word[::-1]
+            return word[::-1] #This is used to reverse items in a list
     
         s_split = s.split(' ')
         s_reverse = [reverseWord(i) for i in s_split]
