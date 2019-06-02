@@ -91,10 +91,10 @@ class Solution:
         
         # If left subtree is Null, recur for right subtree 
         if root.left is None: 
-            return minDepth(root.right)+1
+            return self.minDepth(root.right)+1
         
         # If right subtree is Null , recur for left subtree 
         if root.right is None: 
-            return minDepth(root.left) +1 
+            return self.minDepth(root.left) +1 
         
-        return min(minDepth(root.left), minDepth(root.right))+1
+        return min(self.minDepth(root.left), self.minDepth(root.right))+1
